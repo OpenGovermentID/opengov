@@ -2,7 +2,7 @@
 
 OpenGov merupakan kependekan Open Goverment yang akan di dedikasikan kepada Negara Indonesia. Repository ini adalah main project untuk menjalan aplikasi Goverment lainnya seperti:
 
-1. E-Budgenting
+1. E-Budgeting
 2. E-Procurement
 3. E-Catalogue
 4. E-Purchasing
