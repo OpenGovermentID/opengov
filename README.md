@@ -10,4 +10,4 @@ OpenGov merupakan kependekan Open Goverment yang akan di dedikasikan kepada Nega
 6. E-Survey
 7. E-Healt
 
-OpenGov ini dibuat menggunakan framework [django](http://www.djangoproject.org)
+OpenGov ini dibuat menggunakan framework [django](http://www.djangoproject.com)
