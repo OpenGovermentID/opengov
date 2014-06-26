@@ -1,0 +1,5 @@
+# Django Project
+*.pyc
+
+# SASS
+.sass-cache
