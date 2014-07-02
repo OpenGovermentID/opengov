@@ -3,3 +3,4 @@
 
 # SASS
 .sass-cache
+*.css
