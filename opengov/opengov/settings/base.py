@@ -8,6 +8,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.6/ref/settings/
 """
 
+from mongoengine import connect
+
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
@@ -36,6 +38,7 @@ DJANGO_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'ehealt',
 )
 
 THIRD_PARTY_APPS = (
@@ -69,6 +72,13 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'develop.db'),
     }
 }
+
+# MongoEngine Configuration
+MONGO_DB_NAME = 'ogi'
+MONGO_HOST = '127.0.0.1'
+MONGO_PORT = 27017
+connect(MONGO_DB_NAME, host=MONGO_HOST, port=MONGO_PORT)
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/

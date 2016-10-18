@@ -4,3 +4,6 @@
 # SASS
 .sass-cache
 *.css
+
+opengov/ehealt
+opengov/opengov/develop.db
