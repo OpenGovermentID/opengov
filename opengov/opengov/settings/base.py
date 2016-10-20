@@ -12,6 +12,7 @@ from mongoengine import connect
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
@@ -62,6 +63,21 @@ ROOT_URLCONF = 'opengov.urls'
 
 WSGI_APPLICATION = 'opengov.wsgi.application'
 
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': ['templates'],
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    },
+]
 
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
@@ -96,5 +112,14 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.6/howto/static-files/
+import os
 
 STATIC_URL = '/static/'
+
+print "BASE DIR: ", BASE_DIR
+
+STATICFILES_DIRS = (
+    os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(__file__))), "static"),
+)
+
+print STATICFILES_DIRS

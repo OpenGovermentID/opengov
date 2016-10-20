@@ -1,8 +1,36 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>OpenGov Indonesia</title>
-	</head>
-	<body>
-	</body>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Open Government Indonesia</title>
+
+    {% include "basic/head.html" %}
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    {% include "basic/nav.html" %}
+    
+    <!-- Main Content -->
+    {% block content %}
+    {% endblock %}
+
+    <!-- Main js -->
+    {% include "basic/js.html" %}
+    
+    <!-- inline js -->
+    
+    {% include "basic/footer.html" %}
+
+</body>
+
 </html>
