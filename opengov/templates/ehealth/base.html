@@ -9,27 +9,29 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Open Government Indonesia</title>
+    <title>OGI Health</title>
 
-    {% include "basic/head.html" %}
+    {% include "ehealth/head.html" %}
 
 </head>
 
 <body>
 
     <!-- Navigation -->
-    {% include "basic/nav.html" %}
+    {% include "ehealth/nav.html" %}
     
     <!-- Main Content -->
     {% block content %}
     {% endblock %}
 
     <!-- Main js -->
-    {% include "basic/js.html" %}
+    {% include "ehealth/js.html" %}
     
     <!-- inline js -->
-    
-    {% include "basic/footer.html" %}
+    {% block inline_js %}
+    {% endblock %}
+
+    {% include "ehealth/footer.html" %}
 
 </body>
 
